@@ -1,0 +1,25 @@
+{
+  "name": "angular-node",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Artur Nowakowski"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.1",
+    "angular-route": "^1.5.8",
+    "angular": "^1.5.8",
+    "underscore": "^1.8.3",
+    "uikit": "^2.27.2",
+    "angular-resource": "^1.5.8"
+  }
+}
