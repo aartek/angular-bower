@@ -1,0 +1,41 @@
+<a class="uk-button" ng-href="#/"><i class="uk-icon-arrow-left"></i> To List</a>
+<form class="uk-form uk-form-horizontal" name="repoContributors">
+    <div class="uk-form-row">
+        <label class="uk-form-label">
+            Repo
+        </label>
+        <div class="uk-form-controls">
+            {{repoContribCtrl.repo}}
+        </div>
+    </div>
+    <div class="uk-form-row">
+        <label class="uk-form-label">
+            Owner
+        </label>
+        <div class="uk-form-controls">
+            {{repoContribCtrl.owner}}
+        </div>
+    </div>
+    <div class="uk-form-row">
+        <label class="uk-form-label">
+            Contributors
+        </label>
+        <div class="uk-form-controls">
+            <table class="uk-table uk-table-striped">
+                <tr>
+                    <th>#</th>
+                    <th></th>
+                    <th>Login</th>
+                    <th>Contributions</th>
+                </tr>
+                <tr ng-repeat="item in repoContribCtrl.repoContributors">
+                    <td>{{$index+1}}</td>
+                    <td><img ng-src="{{item.owner.avatar_url}}"></td>
+                    <td>{{item.login}}</td>
+                    <td>{{item.contributions}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</form>

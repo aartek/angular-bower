@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/uikit/css/uikit.min.css" />
+    <!-- endbower -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/uikit/js/uikit.min.js"></script>
+    <script src="../bower_components/uikit/js/core/alert.js"></script>
+    <script src="../bower_components/uikit/js/core/alert.min.js"></script>
+    <script src="../bower_components/uikit/js/core/button.js"></script>
+    <script src="../bower_components/uikit/js/core/button.min.js"></script>
+    <script src="../bower_components/uikit/js/core/core.js"></script>
+    <script src="../bower_components/uikit/js/core/core.min.js"></script>
+    <script src="../bower_components/uikit/js/core/cover.js"></script>
+    <script src="../bower_components/uikit/js/core/cover.min.js"></script>
+    <script src="../bower_components/uikit/js/core/dropdown.js"></script>
+    <script src="../bower_components/uikit/js/core/dropdown.min.js"></script>
+    <script src="../bower_components/uikit/js/core/grid.js"></script>
+    <script src="../bower_components/uikit/js/core/grid.min.js"></script>
+    <script src="../bower_components/uikit/js/core/modal.js"></script>
+    <script src="../bower_components/uikit/js/core/modal.min.js"></script>
+    <script src="../bower_components/uikit/js/core/nav.js"></script>
+    <script src="../bower_components/uikit/js/core/nav.min.js"></script>
+    <script src="../bower_components/uikit/js/core/offcanvas.js"></script>
+    <script src="../bower_components/uikit/js/core/offcanvas.min.js"></script>
+    <script src="../bower_components/uikit/js/core/scrollspy.js"></script>
+    <script src="../bower_components/uikit/js/core/scrollspy.min.js"></script>
+    <script src="../bower_components/uikit/js/core/smooth-scroll.js"></script>
+    <script src="../bower_components/uikit/js/core/smooth-scroll.min.js"></script>
+    <script src="../bower_components/uikit/js/core/switcher.js"></script>
+    <script src="../bower_components/uikit/js/core/switcher.min.js"></script>
+    <script src="../bower_components/uikit/js/core/tab.js"></script>
+    <script src="../bower_components/uikit/js/core/tab.min.js"></script>
+    <script src="../bower_components/uikit/js/core/toggle.js"></script>
+    <script src="../bower_components/uikit/js/core/toggle.min.js"></script>
+    <script src="../bower_components/uikit/js/core/touch.js"></script>
+    <script src="../bower_components/uikit/js/core/touch.min.js"></script>
+    <script src="../bower_components/uikit/js/core/utility.js"></script>
+    <script src="../bower_components/uikit/js/core/utility.min.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <!-- endbower -->
+    <!-- include: "type": "js", "files": "**/*.js" -->
+    <script src="app.js"></script>
+    <script src="config/routes/routes.js"></script>
+    <script src="config/translations/i18n-en.js"></script>
+    <script src="config/translations/translationsConfig.js"></script>
+    <script src="controllers/MainCtrl.js"></script>
+    <script src="controllers/RepoContributorsCtrl.js"></script>
+    <script src="resources/GithubRepo.js"></script>
+    <script src="resources/GithubUserRepos.js"></script>
+    <!-- /include -->
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body data-uk-observe>
+
+<div class="uk-container uk-container-center uk-margin-small-top uk-margin-large-bottom" ng-app="app">
+
+    <nav class="uk-navbar uk-margin-bottom">
+        <ul class="uk-navbar-nav">
+            <li>
+                <a href="#/">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="uk-grid">
+        <div class="uk-width-1-1" ng-view>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
