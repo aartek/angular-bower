@@ -24,13 +24,11 @@
             <table class="uk-table uk-table-striped">
                 <tr>
                     <th>#</th>
-                    <th></th>
                     <th>Login</th>
                     <th>Contributions</th>
                 </tr>
-                <tr ng-repeat="item in repoContribCtrl.repoContributors">
+                <tr ng-repeat="item in repoContribCtrl.repoContributors track by $index">
                     <td>{{$index+1}}</td>
-                    <td><img ng-src="{{item.owner.avatar_url}}"></td>
                     <td>{{item.login}}</td>
                     <td>{{item.contributions}}</td>
                 </tr>
